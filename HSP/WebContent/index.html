@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="index.css">
+</head>
+<body background="image.jpg">
+<div id="header">
+<div id="heading">
+<h1 >HOUSE SEARCH PROJECT</h1>
+</div>
+<div id="logo">
+<button  class="btn btn-primary btn-lg" data-toggle="modal" data-target="#login" >CLIENT</button>
+<button  class="btn btn-primary btn-lg" data-toggle="modal" data-target="#admin" >ADMIN</button>
+</div>
+</div>
+<!--------------------------------------------------------------------MODAL REGISTER------------------------------------------------------------------------------------------ -->
+  <!-- Modal -->
+  <div class="modal fade" id="login" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">login here.......</h4>
+        </div>
+        <div class="modal-body">
+        <p>CLICK on register TO GET USERNAME AND PASSWORD</p>
+        <form action="login.jsp">
+        
+    <label>USERNAME</label><input type="text" class="form-control" name="username" placeholder="Enter username">
+  
+    <label>Password</label><input type="password" class="form-control" name="password" placeholder="Password">
+  
+          <input type="submit" value="LOGIN" name="POP">
+        </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#Register">REGISTER</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- ---------------------------------------------------------------------------------------------------------- -->
+  <div class="modal fade" id="Register" role="dialog">
+  <div class="modal-dialog">
+  <div class="modal-content">
+  <div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal">&times;</button>
+ <h1 class="modal-title">registration form</h1>
+ </div>
+ <div class="modal-body">
+<form action="register.jsp">
+ <div class="form-group row">
+    <label  class="col-sm-2 col-form-label col-form-label-sm">USERNAME:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control form-control-sm" name="username"  placeholder="username">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" name="email"  placeholder="..@gmail.com">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label  class="col-sm-2 col-form-label col-form-label-lg" >PASSWORD:</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control form-control-lg" name="password"  placeholder="password">
+    </div>
+    </div>
+    <div class="form-group row">
+    <label  class="col-sm-2 col-form-label col-form-label-lg">PHONE NO.:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control form-control-lg" name="phone"  placeholder="9999999999">
+    </div>
+    </div>
+     <div class="form-group row">
+    <label  class="col-sm-2 col-form-label col-form-label-lg">GENDER:</label>
+    <div class="col-sm-10">
+      <div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="gender">
+  <label class="form-check-label" for="inlineRadio1">MALE</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="gender">
+  <label class="form-check-label" for="inlineRadio2">FEMALE</label>
+</div>
+    </div>
+    </div>
+      <div class="modal-footer">
+      <input type="submit" name="submit" value="submit">
+ </div>
+    </form> 
+  </div>
+
+ </div>
+ 
+ </div>
+ </div>
+ <div class="modal fade" id="admin" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">login here.......</h4>
+        </div>
+        <div class="modal-body">
+        <form action="admin.jsp">
+        
+    <label>NAME</label><input type="text" class="form-control" name="name" placeholder="Enter username">
+  
+    <label>Password</label><input type="password" class="form-control" name="pass" placeholder="Password">
+  
+          <input type="submit" value="LOGIN" name="POP">
+        </form>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+</body>
+</html>

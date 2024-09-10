@@ -1,0 +1,13 @@
+<web-app>
+<servlet>
+<servlet-name>date</servlet-name>
+<servlet-class>servlet.DateServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>date</servlet-name>
+<url-pattern>/DateServlet</url-pattern>
+</servlet-mapping>
+<welcome-file-list>
+<welcome-file>index.html</welcome-file>
+</welcome-file-list>
+</web-app>
